@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.example.flyman.playground.ParkMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/select_toolbar"/>
+
+    <!--<com.example.flyman.playground.widget.ExpandableSearchView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/search_view"-->
+        <!--android:layout_alignParentTop="true">-->
+    <!--</com.example.flyman.playground.widget.ExpandableSearchView>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/span_line"
+        android:background="@color/background"
+        android:layout_alignTop="@+id/select_toolbar">
+    </View>
+    <com.example.flyman.playground.widget.SelectToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_toolbar"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentBottom="true">
+    </com.example.flyman.playground.widget.SelectToolbar>
+</RelativeLayout>
